@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Building a low-cost flight simulation rig">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mupfdev.github.io/xbox-building-a-low-cost-flight-simulation-rig.html">
+    <meta property="og:image" content="https://mupfdev.github.io/img/ogp-1200x1200.png">
+
+    <title>mupf.dev</title>
+    <link rel="stylesheet" href="/style.min.css">
+    <link rel="stylesheet" href="/mupf.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/site.webmanifest?v=2">
+
+    <link href="/video-js.min.css" rel="stylesheet">
+    <script src="/video.min.js"></script>
+
+    <script src="/minimal-lightbox.min.js"></script>
+  </head>
+
+  <body>
+    <h1>mupf.dev</h1>
+
+    <p class="author">Michael Fitzmayer <br> August 5th, 2023</p>
+
+    <div class="abstract">
+      <p>
+        The start of a series of articles about the inexpensive entry
+        into the realm of serious flight simulation with the Xbox Series
+        S and custom-built peripherals.
+      </p>
+    </div>
+
+    <h2>Building a low-cost flight simulation rig</h2>
+
+    <nav class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#introduction">Introduction</a></li>
+        <li>
+          <a href="#hardware">The Hardware</a>
+          <ol>
+            <li><a href="#communication">Communication</a></li>
+            <li><a href="#hid-fcu">HID-FCU</a></li>
+          </ol>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+      </ol>
+    </nav>
+
+    <h3 id="introduction">Introduction</h3>
+
+    <p>
+      Ever since I bought my first PC at a garage sale in 1996, a Compaq
+      386, I have been fascinated by technology and the desire to
+      understand it has never waned.  Looking back over all these years,
+      apart from my fascination with programming, there is one constant
+      that has kept me mesmerised in one way or another, and that is
+      flight simulation.
+    </p>
+
+    <p>
+      Starting with versions of Microsoft Flight Simulator that were
+      completely outdated at the time, then later titles like Digital
+      Integration's Tornado and MicroProse's Falcon series, I somehow
+      always stayed with the genre.
+    </p>
+
+    <p>
+      Years later I ended up with X-Plane 8 and X-Plane 9.  Neither
+      version really ran well on my PC at the time, but I couldn't have
+      cared less.<br>
+
+      Eventually the hobby fell by the wayside again, my own family
+      plans came to the fore and I finally had the glorious idea of
+      selling all my equipment on eBay to buy a Switch Lite.  Yes, you
+      heard me.
+    </p>
+
+    <p>
+      In retrospect, however, it was a wise decision and I have no
+      regrets, even if it did make me want to pick up the hobby again
+      more than once.  Like just recently.
+    </p>
+
+    <p>
+      But where do I start?  Just buy everything again?  A modern PC is
+      expensive, and the equipment to go with it even more so.  No, that
+      was out of the question, especially as I don't want to own so many
+      things that take up space I don't have.
+    </p>
+
+    <p>
+      I quickly realised that the solution was to buy a second-hand Xbox
+      Series S and Microsoft Flight Simulator.  The price was simply
+      unbeatable!
+    </p>
+
+    <p>
+      But how does flight simulation fare on the Xbox? Especially if you
+      are seriously interested in the subject matter?  In various online
+      communities I quickly came across the narrative that the Xbox is
+      only a good entry point into the realm of flight simulation.  As a
+      way to pick up the casual gamer and prepare them for more.
+    </p>
+
+    <p>
+      It is, after all, a closed, proprietary system with limited
+      hardware compatibility and fewer options for customisation.  So if
+      you want to get serious about the hobby, the only step you can
+      take is to get yourself a fully fledged PC.  So no, I don't want
+      that!
+    </p>
+
+    <p>
+      I mean, after all, it's the same software, just on a different
+      platform, right?  How hard can it be?  That was the moment I
+      decided to do what I do best: build it myself.  This series is all
+      about showing you what can be done, how to upcycle defective
+      technology and get it to work with your Xbox Series S.
+    </p>
+
+    <h3 id="hardware">The Hardware</h3>
+
+    <h4>Communication</h4>
+
+    <p>
+      It all started with the question of how to communicate with the
+      Xbox.  Converting a controller was expensive, unnecessarily
+      complicated and time-consuming.  So no, that was out of the
+      question. However, it seemed possible to connect a keyboard and
+      mouse.  Perfect!
+    </p>
+
+    <p>
+      After all, a keyboard was nothing more than a standard input
+      device, so it was reasonable to assume that HID<label for="sn-1"
+      class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-1"
+      class="sidenote-toggle"><span class="sidenote">The USB human
+      interface device class (USB HID class) is a part of the USB
+      specification for computer peripherals: it specifies a device
+      class (a type of computer hardware) for human interface devices
+      such as keyboards, mice, game controllers and alphanumeric display
+      devices.</span> input devices would be detected by the Xbox.
+      Because if keyboards and mice are to be supported, then ideally as
+      many models as possible.
+    </p>
+
+    <p>
+      It was worth a shot.  I tried to register a simple microcontroller
+      with USB as an HID device to simulate basic keyboard input.  When
+      it worked on my laptop, I connected the device to my Xbox and lo
+      and behold, it worked!
+    </p>
+
+    <p>
+      In a nutshell, HID devices are ideal for this project and are
+      infinitely flexible thanks to microcontrollers.  Time to get
+      started!
+    </p>
+
+    <h4 id="hid-fcu">HID-FCU</h4>
+
+    <p>
+      HID-FCU is an autopilot control unit based on the
+      <a href="https://www.bendixking.com/content/dam/bendixking/en/documents/document-lists/downloads-and-manuals/006-18034-0000-KAP-140-Pilots-Guide.pdf">KAP
+      140 autopilot system</a> from Bendix/King, which is used in many
+      aircraft.  Including my personal favourite,
+      the <a href="https://blackbirdsims.com/flight/PG.php?id=74">Pilatus
+      PC-6 Turbo-Porter</a> by Blackbird Simulations.
+    </p>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-2x1" src="img/low-cost-flight-rig-01.jpg" alt="Low-cost flight rig, HID-FCU">
+      <img class="image-zoom gallery-2x1" src="img/low-cost-flight-rig-02.jpg" alt="Low-cost flight rig, HID-FCU">
+    </div>
+
+    <p class="free-standing">
+      The unit was created from the housing of a
+      defective <a href="https://www.manson.com.hk/product/ssp-8160/">Manson
+      SSP-8160</a> laboratory power supply.  I gutted most of it and
+      fitted it with an STM32F103 Blue Pill microcontroller board.  I
+      replaced the 7-segment displays and the rotary encoders with
+      ready-made modules and only reused the original key matrix and the
+      main power switch.
+    </p>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-03.jpg" alt="Low-cost flight rig, HID-FCU">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-04.jpg" alt="Low-cost flight rig, HID-FCU">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-05.jpg" alt="Low-cost flight rig, HID-FCU">
+    </div>
+
+    <p>
+      The boot-up phase and the behaviour of the firmware is tailored to
+      the Pilatus Porter PC-6.  In additional, since there is no way to
+      read data back from the simulator, there is also the option to
+      change the state of the device without sending keystrokes to the
+      Xbox. This is very useful when the simulator and the device are
+      out of sync. This is rarely necessary, but it does happen.
+    </p>
+
+    <div class="media-container">
+      <video
+        id="trailer"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="img/flight-rig-hid-fcu-tn.png"
+        data-setup='{"fluid": true}'>
+        <source src="media/flight-rig-hid-fcu.webm" type="video/webm">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider
+          upgrading to a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video
+          </a>
+        </p>
+      </video>
+      <p class="caption">
+        HID-FCU, basic usage.
+        Download: <a href="media/flight-rig-hid-fcu.webm">webm</a>
+      </p>
+    </div>
+
+    <p>
+      Thanks to a custom keyboard profile, the operation is surprisingly
+      pleasant.  The entire autopilot, including vertical and lateral
+      navigation, works flawlessly and the haptics provide the perfect
+      immersion.  It makes a huge difference if you operate the
+      autopilot virtually or if you configure it as if you were sitting
+      in the cockpit.  I have already successfully completed several
+      flights with it and had hardly any difficulties worth mentioning.
+    </p>
+
+    <p>
+      All sources for this project can be found
+      here: <a href="https://github.com/mupfdev/HID-FCU">HID-FCU</a>
+    </p>
+
+    <h3 id="conclusion">Conclusion</h3>
+
+    <p>
+      The Xbox Series S is an unbeatable alternative to a PC for flight
+      simulator enthusiasts. Sure, there is no possibility to fly on
+      networks like VATSIM as of today, but for all those who can live
+      with this trade-off, I can highly recommend it.  In addition, it
+      hardly takes up any space and can be expanded with your own
+      peripherals relatively easily and inexpensively due to its
+      compatibility with the HID standard.
+    </p>
+
+    <p>
+      I am very happy with the results so far and am looking forward to
+      adding more custom built hardware to the rig.  More than anything,
+      though, I hope that in this way I have been able to create more
+      interest in cockpit building among Xbox users.  Happy hacking!
+    </p>
+
+    <p>
+      <a href="/">Go back</a>
+    </p>
+  </body>
+</html>
+
