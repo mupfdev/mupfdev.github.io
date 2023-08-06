@@ -29,7 +29,7 @@
         I recently had access to a licenced IDA Pro<label for="sn-1"
         class="sidenote-toggle
         sidenote-number"></label><input type="checkbox" id="sn-1"
-        class="sidenote-toggle" /><span class="sidenote">The IDA
+        class="sidenote-toggle"><span class="sidenote">The IDA
         Disassembler and Debugger is an interactive, programmable,
         extensible, multi-processor disassembler.  IDA has become the
         de-facto standard for the analysis of hostile code,
@@ -73,7 +73,7 @@
 
     <p>
       <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
-        <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
+        <img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png">
       </a>
 
       This work is licensed under a <a rel="license"
@@ -123,12 +123,11 @@
       cracked and uncracked version to each other, I used
       WinMerge.<label for="sn-2" class="sidenote-toggle
       sidenote-number"></label><input type="checkbox" id="sn-2"
-      class="sidenote-toggle"
-      /><span class="sidenote"> <a href="https://winmerge.org/">WinMerge</a>
-      is an Open Source differencing and merging tool for Windows.
-      WinMerge can compare both folders and files, presenting
-      differences in a visual text format that is easy to understand and
-      handle.</span>
+      class="sidenote-toggle"><span class="sidenote"><a
+      href="https://winmerge.org/">WinMerge</a> is an Open Source
+      differencing and merging tool for Windows.  WinMerge can compare
+      both folders and files, presenting differences in a visual text
+      format that is easy to understand and handle.</span>
     </p>
 
     <p>
@@ -141,7 +140,7 @@
 
     <p>
       <img class="centered" src="img/ng-folder-comparison.png" alt="Folder
-      comparison" />
+      comparison">
     </p>
 
     <p>
@@ -175,17 +174,17 @@
     <p>
       Before I could start analysing the data, it was only logical to
       get an overview of how the executable file is organised.  To
-      achieve this, I opened the executable file using
-      E32Explorer<label for="sn-3" class="sidenote-toggle
-      sidenote-number"></label><input type="checkbox" id="sn-3"
-      class="sidenote-toggle"
-      /><span class="sidenote"><a href="https://github.com/mrRosset/E32Explorer">E32Explorer</a>
-      is a simple tool to visualize the different parts of an Symbian OS
+      achieve this, I opened the executable file using E32Explorer<label
+      for="sn-3" class="sidenote-toggle sidenote-number"></label><input
+      type="checkbox" id="sn-3" class="sidenote-toggle"><span
+      class="sidenote"><a
+      href="https://github.com/mrRosset/E32Explorer">E32Explorer</a> is
+      a simple tool to visualize the different parts of an Symbian OS
       E32Image and of a TRomImage.</span> and looked at the header:
     </p>
 
     <p>
-      <img class="centered" src="img/ng-file-header.png" alt="File header" />
+      <img class="centered" src="img/ng-file-header.png" alt="File header">
     </p>
 
     <p>
@@ -210,7 +209,7 @@
       might need it later.
     </p>
 
-    <br />
+    <br>
 
     <div>
       <table>
@@ -248,16 +247,16 @@
     <h3 id="e32image-format">The E32Image format</h3>
 
     <p>
-      For completeness, here is an overview of the E32Image
-      format<label for="sn-4" class="sidenote-toggle
-      sidenote-number"></label><input type="checkbox" id="sn-4"
-      class="sidenote-toggle" /><span class="sidenote">Source:
-      <a href="https://web.archive.org/web/20141018215857/http://www.antonypranata.com/node/10">antonypranata.com</a>
+      For completeness, here is an overview of the E32Image format<label
+      for="sn-4" class="sidenote-toggle sidenote-number"></label><input
+      type="checkbox" id="sn-4" class="sidenote-toggle"><span
+      class="sidenote">Source:  <a
+      href="https://web.archive.org/web/20141018215857/http://www.antonypranata.com/node/10">antonypranata.com</a>
       (archived).</span>:
     </p>
 
     <p>
-      <img class="centered" src="img/ng-e32image-format.png" alt="E32Image format" />
+      <img class="centered" src="img/ng-e32image-format.png" alt="E32Image format">
     </p>
 
     <div>
@@ -297,17 +296,17 @@
     <p>
       To get an overview of the modifications made, still without
       understanding exactly what they did, I opened HxD<label for="sn-5"
-      class="sidenote-toggle
-      sidenote-number"></label><input type="checkbox" id="sn-5"
-      class="sidenote-toggle" /><span class="sidenote">HxD is a
-      carefully designed and fast hex editor which, additionally to raw
-      disk editing and modifying of main memory (RAM), handles files of
-      any size.</span> and pressed <code>Ctrl+k</code> to start a hex
-      comparison of the cracked and uncracked executable:
+      class="sidenote-toggle sidenote-number"></label><input
+      type="checkbox" id="sn-5" class="sidenote-toggle"><span
+      class="sidenote">HxD is a carefully designed and fast hex editor
+      which, additionally to raw disk editing and modifying of main
+      memory (RAM), handles files of any size.</span> and pressed
+      <code>Ctrl+k</code> to start a hex comparison of the cracked and
+      uncracked executable:
     </p>
 
     <p>
-      <img class="centered" src="img/ng-app-comparison.png" alt="App comparison" />
+      <img class="centered" src="img/ng-app-comparison.png" alt="App comparison">
     </p>
 
     <p>
@@ -321,7 +320,7 @@
       begins:
     </p>
 
-    <br />
+    <br>
 
     <div>
       <table>
@@ -350,7 +349,7 @@
       In the same manner I noted down all further changes:
     </p>
 
-    <br />
+    <br>
 
     <div>
       <table>
@@ -414,7 +413,7 @@
     </p>
 
     <p>
-      <img class="centered" src="img/ng-vanities.png" alt="Vanities" />
+      <img class="centered" src="img/ng-vanities.png" alt="Vanities">
     </p>
 
     <p>
@@ -436,7 +435,7 @@
 
     <p>
       <img class="centered" src="img/ng-ida-pro-load-file.png" alt="Load
-      file in IDA Pro" />
+      file in IDA Pro">
     </p>
 
     <p>
@@ -447,7 +446,7 @@
     </p>
 
     <p>
-      <img class="centered" src="img/ng-ida-pro-nokiafc.png" alt="NokiaFC" />
+      <img class="centered" src="img/ng-ida-pro-nokiafc.png" alt="NokiaFC">
     </p>
 
     <p>
@@ -461,7 +460,7 @@
 
     <p>
       <img class="centered" src="img/ng-ida-pro-nokiafc-disasm.png"
-      alt="NokiaFC disassembly" />
+      alt="NokiaFC disassembly">
     </p>
 
     <p>
@@ -530,20 +529,21 @@
       Tip: an easy way to find out which instruction is represented by a
       so-called immediate-value (<code>1E FF 2F E1</code>) is to use an
       online disassembler like ODA.<label for="sn-6"
-      class="sidenote-toggle
-      sidenote-number"></label><input type="checkbox" id="sn-6"
-      class="sidenote-toggle" /><span class="sidenote">A lightweight,
-      online service for when you don’t have the time, resources, or
-      requirements to use a heavier-weight alternative. Explore
-      executables by dissecting its sections, strings, symbols, raw hex
-      and machine level instructions:
-      <br /><a href="https://onlinedisassembler.com/odaweb/">onlinedisassembler.com</a>.</span>
+      class="sidenote-toggle sidenote-number"></label><input
+      type="checkbox" id="sn-6" class="sidenote-toggle"><span
+      class="sidenote">A lightweight, online service for when you don’t
+      have the time, resources, or requirements to use a heavier-weight
+      alternative. Explore executables by dissecting its sections,
+      strings, symbols, raw hex and machine level instructions:<br>
+
+      <a
+      href="https://onlinedisassembler.com/odaweb/">onlinedisassembler.com</a>.</span>
       If you want to use it alongside IDA Pro, it must be configured to
       use the armv4t platform, little-endian and no-force-thumb:
     </p>
 
     <p>
-      <img class="centered" src="img/ng-online-disassembler.png" alt="ODA" />
+      <img class="centered" src="img/ng-online-disassembler.png" alt="ODA">
     </p>
 
     <p>
@@ -563,7 +563,7 @@
 
     <p>
       <img class="centered" src="img/ng-ida-pro-cone318.png"
-      alt="CONE_318" />
+      alt="CONE_318">
     </p>
 
     <p>
@@ -575,7 +575,7 @@
 
     <p>
       <img class="centered" src="img/ng-ida-pro-cone318.png"
-      alt="CONE_318 disassembly" />
+      alt="CONE_318 disassembly">
     </p>
 
     <p>
@@ -618,7 +618,7 @@
     <p>
       <img class="centered"
       src="img/ng-cmda-audio-output-stream-pad-function.png"
-      alt="CMdaAudioOutputStreamPadFunction" />
+      alt="CMdaAudioOutputStreamPadFunction">
     </p>
 
     <p>
@@ -646,7 +646,7 @@
 
     <p>
       <img class="centered" src="img/ng-ida-pro-nokiafc-ordinal.png"
-      alt="NokiaFC ordinal number" />
+      alt="NokiaFC ordinal number">
     </p>
 
     <p>
@@ -672,7 +672,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-header.png" alt="Import
-           section header" />
+           section header">
     </p>
 
     <p>
@@ -707,7 +707,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-example.png" alt="Import
-           section example" />
+           section example">
     </p>
 
     <p>
@@ -728,7 +728,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-dll-name.png" alt="Import
-           section DLL name" />
+           section DLL name">
     </p>
 
     <p>
@@ -739,7 +739,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-entry-size.png"
-           alt="Import section entry size" />
+           alt="Import section entry size">
     </p>
 
     <p>
@@ -750,13 +750,13 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-entry-ordinals.png"
-           alt="Import section entry ordinals" />
+           alt="Import section entry ordinals">
     </p>
 
     <p>
-      <code>03 00 00 00 → 03h → 3</code><br />
-      <code>06 00 00 00 → 06h → 6</code><br />
-      <code>1B 00 00 00 → 1Bh → 27</code><br />
+      <code>03 00 00 00 → 03h → 3</code><br>
+      <code>06 00 00 00 → 06h → 6</code><br>
+      <code>1B 00 00 00 → 1Bh → 27</code><br>
       <code>47 00 00 00 → 47h → 71</code>
     </p>
 
@@ -766,7 +766,7 @@
       modified there.
     </p>
 
-    <br />
+    <br>
 
     <div>
       <table>
@@ -810,7 +810,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-nokiafc-offset.png"
-           alt="Import section NokiaFC offset" />
+           alt="Import section NokiaFC offset">
     </p>
 
     <p>
@@ -830,7 +830,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-nokiafc-new-offset.png"
-           alt="Import section NokiaFC new offset" />
+           alt="Import section NokiaFC new offset">
     </p>
 
     <p>
@@ -849,7 +849,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-mcas-offset.png"
-           alt="Import section MediaClientAudioStream offset" />
+           alt="Import section MediaClientAudioStream offset">
     </p>
 
     <p>
@@ -859,7 +859,7 @@
     <p>
       <img class="centered"
            src="img/ng-ida-pro-import-section-mcas-dll-name.png"
-           alt="Import section MediaClientAudioStream DLL name" />
+           alt="Import section MediaClientAudioStream DLL name">
     </p>
 
     <p>
@@ -890,7 +890,8 @@
     <p>
       After applying the proper adjustments, the game launched without
       any problems and I was able to experience a piece of lost video
-      game history first hand.<br />
+      game history first hand.<br>
+
       I also learned a lot about ARM assembly language and the basic
       process of reverse engineering.
     </p>
