@@ -140,18 +140,17 @@
 
     <p>
       At the very beginning, the main question I asked myself was which
-      options I had for communicating with the Xbox.  It was certainly
-      not an option to convert an Xbox controller or adapt compatible
-      flight simulation input devices to my preferences. This would be
-      expensive, unnecessarily complicated and time-consuming.<br>
-
-      However, it seemed possible to connect a keyboard and mouse.
-      Perfect!
+      choices I had for communicating with the Xbox.  It was certainly
+      not an option to convert an Xbox controller or to adapt compatible
+      flight simulation input devices to my preferences.  This would
+      have been expensive, unnecessarily complicated and time-consuming,
+      however, it seemed possible to connect a keyboard and
+      mouse. Perfect!
     </p>
 
     <p>
-      After all, a keyboard was nothing more than a standardised input
-      device, so it was reasonable to assume that HID<label for="sn-1"
+      After all, a keyboard is nothing more than a standardised input
+      device, so it is reasonable to assume that HID<label for="sn-1"
       class="sidenote-toggle
       sidenote-number"></label><input type="checkbox" id="sn-1"
       class="sidenote-toggle"><span class="sidenote">The USB human
@@ -163,18 +162,17 @@
     </p>
 
     <p>
-
-      It was worth a shot! I briefly tried to programme a
-      microcontroller so that it is recognised as an HID keyboard and
-      continuously sends keystrokes to the host connected to it.  When
-      everything worked on my laptop, I connected the device to my Xbox
-      and lo and behold, it worked!
+      It was worth a shot!  I briefly tried to program a microcontroller
+      so that it would be recognised as an HID keyboard and continuously
+      sending keystrokes to the host connected to it.  When everything
+      worked on my laptop, I connected the device to my Xbox and lo and
+      behold, it worked!
     </p>
 
     <p>
       In a nutshell, HID devices are ideal for this project and are
-      infinitely flexible thanks to microcontrollers.  This even works
-      if you connect a regular keyboard in parallel.  Time to get
+      infinitely more flexible thanks to microcontrollers.  This even
+      works if you connect a regular keyboard in parallel.  Time to get
       started!
     </p>
 
@@ -182,12 +180,12 @@
 
     <p>
       One of the most important instruments in an aircraft is the
-      autopilot. Sure it's fun to fly an aircraft by hand, but in a
-      simulated environment you want to be able to navigate. Regardless
-      of the weather and visibility. In addition, monitoring individual
+      autopilot.  Sure, it's fun to fly an aircraft by hand, but in a
+      simulated environment you want to be able to navigate, regardless
+      of weather or visibility.  In addition, monitoring individual
       systems can become a complex task, especially if you don't have a
-      co-pilot who can take care of it.  So the autopilot is very
-      helpful and its use is also entirely realistic.
+      co-pilot who can take care of it, hence the autopilot function is
+      very helpful and its use is also entirely realistic.
     </p>
 
     <div class="gallery">
@@ -198,13 +196,13 @@
     <p>
       For this reason, I converted a
       defective <a href="https://www.manson.com.hk/product/ssp-8160/">Manson
-      SSP-8160</a> laboratory power supply.  I gutted most of it and
-      fitted it with an STM32F103 Blue Pill microcontroller board.  I
+      SSP-8160</a> laboratory power supply. I gutted most of it and
+      fitted it with an STM32F103 Blue Pill microcontroller board. I
       replaced the 7-segment displays
       with <a href="https://tasmota.github.io/docs/TM163x/">TM1637</a>-based
-      equivalents, attached new rotary encoders and only reused the
-      <a href="http://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAKAHcRCAWWsFEDJC4U+UdiGz80eEHirSxAJ1nz84FDIWq4LZRgT8Eoub37bI4wcKP8rILtyUCh9x3a5hCUECjQW9Lth4wnbY2F5UXIIWHO6ezsI8VDEJ9nCpQcIpoeEZaGKxgfmhLv4ZLnYoCBESxNkuVV6VavXCCsGaLeIdPmo9ksndXDLhMj1cxBGWLjYCBiJmLAAuKqaywwveEDAIGGAGCJLBQdUOUNCERoTYxNiHmcH7yFQAJnQAZgCGAK4ANkssTz8fr5fqETQgN5fP5LBi-OgvcDeZKwVgrMAYLwKXxtFpImCERCHLgIYZ4fYYPDYc6XDBVDHYPbhLjYM5gdJQn7-cR8ToyDFYrqFRLpBDEfhJMQAZ02krFEvSVAgX1+Uro4hxPhQbW1aUGHE1ctEkpShvSkj1BXWMgMYw21X11oohNkk2djrwbodrq8ng9br9WuEgdNusDmrA4rEaHIFslFruEpAAHtFJ8AHYAc3VMYkUjUFsDwgARr9vjnIOR4-lJZgkwAHb6Kevwli57hrXZeWbCACS6cbAOL9jdo9E3EWHGrVFC+QsuYmXjdi7z9hAAHl0wBjOgAHSl71T+7oADc6IoAJ77gCWA++ANzDDkIDdT8iMmEAGFkwBbH-J9N90PRR90+X5fhvO8lilFhMxABgNg8LwEI-C1BgAJTzKhcGEAYfDpZE0moZJzgQFhhyYQhyGIRJdgoKMLAAZUtPDWLnJEVTVbwUBYZi43SFDLRIzi6G43jVwUQStA4sCuPkWD4I2TUpJ4ZEFNY3JWPmDDFJGYJdIkbTvFU7BoGpEidhYTDBMjfgbJdEiTLMwjLPrThVNmDsKExCQ1Lgryu3c2gGLEIA">original
-      key matrix</a> and the main power switch.
+      equivalents, attached new rotary encoders and only reused
+      the <a href="http://www.falstad.com/circuit/circuitjs.html?ctz=CQAgjCAMB0l3BWcMBMcUHYMGZIA4UA2ATmIxAUgoqoQFMBaMMAKAHcRCAWWsFEDJC4U+UdiGz80eEHirSxAJ1nz84FDIWq4LZRgT8Eoub37bI4wcKP8rILtyUCh9x3a5hCUECjQW9Lth4wnbY2F5UXIIWHO6ezsI8VDEJ9nCpQcIpoeEZaGKxgfmhLv4ZLnYoCBESxNkuVV6VavXCCsGaLeIdPmo9ksndXDLhMj1cxBGWLjYCBiJmLAAuKqaywwveEDAIGGAGCJLBQdUOUNCERoTYxNiHmcH7yFQAJnQAZgCGAK4ANkssTz8fr5fqETQgN5fP5LBi-OgvcDeZKwVgrMAYLwKXxtFpImCERCHLgIYZ4fYYPDYc6XDBVDHYPbhLjYM5gdJQn7-cR8ToyDFYrqFRLpBDEfhJMQAZ02krFEvSVAgX1+Uro4hxPhQbW1aUGHE1ctEkpShvSkj1BXWMgMYw21X11oohNkk2djrwbodrq8ng9br9WuEgdNusDmrA4rEaHIFslFruEpAAHtFJ8AHYAc3VMYkUjUFsDwgARr9vjnIOR4-lJZgkwAHb6Kevwli57hrXZeWbCACS6cbAOL9jdo9E3EWHGrVFC+QsuYmXjdi7z9hAAHl0wBjOgAHSl71T+7oADc6IoAJ77gCWA++ANzDDkIDdT8iMmEAGFkwBbH-J9N90PRR90+X5fhvO8lilFhMxABgNg8LwEI-C1BgAJTzKhcGEAYfDpZE0moZJzgQFhhyYQhyGIRJdgoKMLAAZUtPDWLnJEVTVbwUBYZi43SFDLRIzi6G43jVwUQStA4sCuPkWD4I2TUpJ4ZEFNY3JWPmDDFJGYJdIkbTvFU7BoGpEidhYTDBMjfgbJdEiTLMwjLPrThVNmDsKExCQ1Lgryu3c2gGLEIA">original
+      key matrix</a> and main power switch.
     </p>
 
     <div class="gallery">
@@ -214,12 +212,12 @@
     </div>
 
     <p class="free-standing">
-      The design is roughly based on the <a
-      href="https://www.bendixking.com/content/dam/bendixking/en/documents/document-lists/downloads-and-manuals/006-18034-0000-KAP-140-Pilots-Guide.pdf">KAP
-      140 autopilot system</a> from Bendix/King, which is used in many
-      aircraft.  Including my personal favourite, the <a
-      href="https://www.youtube.com/watch?v=__hxwFZXF-s">Pilatus PC-6
-      Turbo-Porter</a>.
+      The design is roughly based on
+      the <a href="https://www.bendixking.com/content/dam/bendixking/en/documents/document-lists/downloads-and-manuals/006-18034-0000-KAP-140-Pilots-Guide.pdf">KAP
+      140 autopilot system<a/> from Bendix/King, which is used in many
+      aircrafts, including my personal favorite,
+      the <a href="https://www.youtube.com/watch?v=__hxwFZXF-s">Pilatus
+      PC-6 Turbo-Porter</a>.
     </p>
 
     <div class="gallery">
@@ -227,15 +225,15 @@
     </div>
 
     <p class="free-standing">
-      The boot-up phase and the behaviour of the firmware is modelled
-      after the version used by the <a
-      href="https://blackbirdsims.com/flight/PG.php?id=74">Pilatus
+      The boot-up phase and the behavior of the firmware is modelled
+      after the version used by
+      the <a href="https://blackbirdsims.com/flight/PG.php?id=74">Pilatus
       Porter PC-6 by Blackbird Simulations</a>.  In addition, since
       there is no way to read data back from the simulator, there is
       also the option to change the state of the device without sending
-      keystrokes to the Xbox. This is very useful when the simulator and
-      the device are out of sync. This is rarely necessary, but it does
-      happen.
+      keystrokes to the Xbox.  This is very useful when the simulator
+      and the device are out of sync.  This is rarely necessary, but it
+      does happen.
     </p>
 
     <div class="media-container">
@@ -266,7 +264,7 @@
       Thanks to a custom keyboard profile, the operation is surprisingly
       pleasant.  The entire autopilot, including vertical and lateral
       navigation, works flawlessly and the haptics provide perfect
-      immersion.  It makes a huge difference whether operating the
+      immersion. It makes a huge difference whether operating the
       autopilot virtually, or configuring it manually, as if you were
       sitting right in the cockpit.  I have already successfully
       completed several flights using it, with hardly any difficulties
@@ -299,6 +297,13 @@
 
     <p>
       Overall, the whole project is very much tailored to my individual
+      needs, and without further customisation, an exact replica would
+      probably not make much sense, especially since it is quite
+      undocumented. Nevertheless, it provides a fairly stable basis for
+      designing your own hardware. For this reason I have uploaded the
+      complete source code to GitHub:
+
+      Overall, the whole project is very much tailored to my individual
       needs, and without customisation an exact replica would probably
       not make much sense, and overall it is quite
       undocumented. Nevertheless, it provides a fairly stable basis for
@@ -311,24 +316,24 @@
 
     <p>
       For flight simulator enthusiasts, the Xbox Series S is an
-      unbeatable alternative to a PC.  Sure, there is no possibility to
+      unbeatable alternative to a PC. Sure, there is no possibility to
       fly on networks like <a href="https://vatsim.net/">VATSIM</a> as
       of today, but for all those who can live with this trade-off, I
-      can highly recommend it.  In addition, it hardly takes up any
-      space and can be expanded with your own peripherals relatively
-      easily and inexpensively due to its compatibility with the HID
-      standard.
+      can highly recommend it. In addition, it hardly takes up any space
+      and can be expanded with your own peripherals, relatively easily
+      and inexpensively, due to its compatibility with the HID standard.
     </p>
 
     <p>
       I am very happy with the results so far and I'm looking forward to
       adding more custom built hardware to the rig (which I will of
-      course add to this article).  More than anything, though, I hope
-      that in this way I have been able to create more interest in
-      cockpit building among Xbox users.  Just be creative, look twice
-      at dusty consumer electronics and mundane objects and think about
+      course document in this article).  More than anything though, I’m
+      hoping that this way I’ll be able to create more interest in
+      cockpit building, among Xbox users.  Just be creative, look twice
+      at dusty consumer electronics or mundane objects and think about
       how they could be integrated into a cockpit.  You will suddenly
-      see things around you from a completely new perspective.  Happy
+      see things around you from a completely new perspective and a
+      little creativity provides seemingly endless possibilities.  Happy
       hacking!
     </p>
 
@@ -339,17 +344,17 @@
       constructive feedback to improve the quality of my content.  If
       you are interested in flight simulation or if this article has
       piqued your interest, you are cordially invited to visit me
-      online.  Besides on the <a
-      href="https://discord.st/thepilotclub">The Pilot Club</a>, you can
-      also find me on the <a
-      href="https://discord.gg/nb4Sh9sYAX">cruiselevel.de</a> Discord
+      online. Besides on
+      the <a href="https://discord.st/thepilotclub">The Pilot Club</a>,
+      you can also find me on the
+      <a href="https://discord.gg/nb4Sh9sYAX">cruiselevel.de</a> Discord
       server, the German-speaking community around flight simulation.
-      My Discord handle is <a
-      href="https://discordapp.com/users/362615994226573313">mupf.dev</a>.
+      My Discord handle
+      is <a href="https://discordapp.com/users/362615994226573313">mupf.dev</a>.
     </p>
 
     <p>
-      I would also like to thank salud and my friend Razvan.  For all
+      I would like to thank salud, and also my friend Razvan, for all
       the time they spent proofreading this article.  I really do
       appreciate it!
     </p>
