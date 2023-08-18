@@ -27,7 +27,7 @@
   <body>
     <h1>mupf.dev</h1>
 
-    <p class="author">Michael Fitzmayer <br> August 7th, 2023</p>
+    <p class="author">Michael Fitzmayer <br> August 7th, 2023 <br> Last updated on August 18th, 2023</p>
 
     <div class="abstract">
       <p>
@@ -47,6 +47,7 @@
           <ol>
             <li><a href="#communication">Communication</a></li>
             <li><a href="#autopilot">The Autopilot</a></li>
+            <li><a href="#switch-panel">Switches!</a></li>
           </ol>
         </li>
         <li><a href="#conclusion">Conclusion</a></li>
@@ -302,6 +303,104 @@
       complete source code to
       GitHub: <a href="https://github.com/mupfdev/Xbox-Flight-Simulation-Rig">Xbox-Flight-Simulation-Rig</a>
     </p>
+
+    <h4 id="switch-panel">Switches!</h4>
+
+    <p>
+      Anyone who has ever sat in a cockpit or is simply interested in
+      aviation knows exactly: without a switchs, an airplane is not an
+      airplane.  They are part of it, they serve a purpose, and where
+      you find one, there are generally plenty more.  The Pilatus PC-6
+      is no exception.  For this reason, it was only logical to design a
+      switch board.
+    </p>
+
+    <p>
+      I set myself the following goals:
+    </p>
+
+    <ul>
+      <li>
+        Since the switches control much of the aircraft, including
+        powering the autopilot, the panel should not become a
+        stand-alone input device.
+      </li>
+      <li>
+        It must remain affordable and cost only a fraction compared to
+        proprietary hardware.
+      </li>
+      <li>
+        The design is to resemble the autopilot and the layout of the
+        switches is supposed to be based on the one installed in the
+        Pilatus PC-6.  However, elegance is supposed to take precedence
+        over authenticity.
+      </li>
+    </ul>
+
+    <p>
+      The first problem to be solved was the number of switches. I
+      didn't want to waste 16 GPIO pins on the microcontroller, if I
+      even had that many available. Besides, that would have become a
+      problem as well, since I wanted to connect the panel to the
+      autopilot using a cable.
+    </p>
+
+    <p>
+      I found a simple solution and decided to use
+      the <a href="https://www.ti.com/lit/ds/symlink/pcf8574.pdf">PCF8574
+      8-bit I/O Expander for I²C Bus</a>.  This chip was cheaply
+      available as a readily assembled module.  These modules can be
+      connected in series to control up to 64 GPIO pins per I²C
+      bus. Perfect!
+    </p>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-06.jpg" alt="Low-cost flight rig, switch panel">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-07.jpg" alt="Low-cost flight rig, switch panel">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-08.jpg" alt="Low-cost flight rig, switch panel">
+    </div>
+
+    <p class="free-standing">
+      I used a case from Abox as the base and replaced the front panel
+      with a 3D print.  However, sooner or later I will replace this
+      again with the supplied aluminum plate.  It is simply more durable
+      and withstands the mechanical load of the switches much better.
+      To make the front a bit more visually appealing, I covered it with
+      cut vinyl sheet, just like on the autopilot.
+    </p>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-2x1" src="img/low-cost-flight-rig-09.jpg" alt="Low-cost flight rig, switch panel">
+      <img class="image-zoom gallery-2x1" src="img/low-cost-flight-rig-10.jpg" alt="Low-cost flight rig, switch panel">
+    </div>
+
+    <p class="free-standing">
+      Here is a short demonstration of the current setup with autopilot
+      and switch panel:
+    <p>
+
+    <div class="media-container">
+      <video
+        id="switch-panel-preview-1"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="img/flight-rig-switch-panel-01-tn.png"
+        data-setup='{"fluid": true}'>
+        <source src="media/flight-rig-switch-panel-01.webm" type="video/webm">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider
+          upgrading to a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video
+          </a>
+        </p>
+      </video>
+      <p class="caption">
+        Switch Panel, demo video.
+        Download: <a href="media/flight-rig-switch-panel-01.webm">webm</a>
+      </p>
+    </div>
 
     <h3 id="conclusion">Conclusion</h3>
 
