@@ -27,7 +27,7 @@
   <body>
     <h1>mupf.dev</h1>
 
-    <p class="author">Michael Fitzmayer <br> August 7th, 2023 <br> Last updated on August 18th, 2023</p>
+    <p class="author">Michael Fitzmayer <br> August 7th, 2023 <br> Last updated on August 27th, 2023</p>
 
     <div class="abstract">
       <p>
@@ -47,7 +47,12 @@
           <ol>
             <li><a href="#communication">Communication</a></li>
             <li><a href="#autopilot">The Autopilot</a></li>
-            <li><a href="#switch-panel">Switches!</a></li>
+            <li>
+              <a href="#switch-panel">Switches!</a>
+              <ol>
+                <li><a href="#revising-the-switch-panel-prototype">Revising the prototype</a></li>
+              </ol>
+            </li>
           </ol>
         </li>
         <li><a href="#conclusion">Conclusion</a></li>
@@ -399,6 +404,58 @@
         Switch Panel, demo video.
         Download: <a href="media/flight-rig-switch-panel-01.webm">webm</a>
       </p>
+    </div>
+
+    <h5 id="revising-the-switch-panel-prototype">Revising the prototype</h5>
+
+    <p>
+        Eventually, I decided to rebuild the first prototype of the
+        switch panel and build another one in the progress.  There were
+        two reasons for this:
+    </p>
+
+    <ul>
+      <li>
+        The front panel printed from PLA was very stressed by the heavy
+        switches.  This resulted in annoying squeaking noises when
+        flipping the switches.
+      </li>
+      <li>
+        The stripped USB cable was a very error-prone solution.  It was
+        a matter of time before defective solder joints would occur.
+      </li>
+    </ul>
+
+    <p>
+      The solution to these problems was very simple.  First, I replaced
+      the front panel with the original aluminium front.  At the time I
+      developed the prototype, I just didn't have the necessary tools to
+      machine them.  The result looks much higher quality and more
+      robust.
+    </p>
+
+    <p>
+      Secondly, I have placed a USB socket in the lower part of the
+      housing. This decouples the switches from the enclosure and I can
+      replace the cable in the future at my discretion.  However, the
+      USB cable does not serve as a real USB interface.  I simply use
+      the data lines of the cable for communication via I²C.
+    </p>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-11.jpg" alt="Low-cost flight rig, switch panel">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-12.jpg" alt="Low-cost flight rig, switch panel">
+      <img class="image-zoom gallery-3x1" src="img/low-cost-flight-rig-13.jpg" alt="Low-cost flight rig, switch panel">
+    </div>
+
+    <p class="free-standing">
+      The result is two visually very appealing and robust switch panels
+      with a total of 32 switches that only require two pins on the
+      microcontroller:
+    </p>
+
+    <div class="gallery">
+      <img class="image-zoom" src="img/low-cost-flight-rig-14.jpg" alt="Low-cost flight rig, switch panels and autopilot">
     </div>
 
     <h3 id="conclusion">Conclusion</h3>
