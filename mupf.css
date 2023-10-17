@@ -23,6 +23,13 @@
     padding: 0.5ex;
 }
 
+.gallery-1x1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75.00%;
+}
+
 .gallery-2x1 {
     float: left;
     width: 50.00%;
