@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="SPIRITS, the unreleased N-Gage MMO dueling game">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://mupfdev.github.io/ngage-spirits-the-unreleased-mmo-dueling-game.html">
+    <meta property="og:image" content="https://mupfdev.github.io/img/spirits-1200x844.png">
+
+    <title>mupf.dev</title>
+    <link rel="stylesheet" href="/style.min.css">
+    <link rel="stylesheet" href="/mupf.css">
+    <link rel="stylesheet" href="/minimal-lightbox.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/site.webmanifest?v=2">
+
+    <link href="/video-js.min.css" rel="stylesheet">
+    <script src="/video.min.js"></script>
+
+    <script src="/minimal-lightbox.min.js"></script>
+  </head>
+
+  <body>
+    <h1>mupf.dev</h1>
+
+    <p class="author">Michael Fitzmayer <br> December 21th, 2021</p>
+
+    <div class="abstract">
+      <p>
+        When Nokia, together with Sega, released Pocket Kingdom: Own the
+        World on 24 November 2004, it was clear: the N-Gage Arena was
+        meant for more than just downloadable content or online
+        leaderboards. The time had come for the first mobile MMO game
+        for this platform and it was great, even if it didn't last long.
+      </p>
+
+      <p class="free-standing">
+        Whether someone in Sweden recognised this enormous potential at
+        that moment and created SPIRITS, remains unclear, but if Nokia
+        hadn't pulled the plug on the N-Gage, we would have been in for
+        something that would have left Sega's efforts in the dust.
+      </p>
+
+      <p class="free-standing">
+        This is the story of SPIRITS. Jadestone's cancelled massively
+        multiplayer online dueling game, a title which could have
+        potentially turned the tide of the N-Gage with its deep
+        mythology and dark, unique atmosphere.
+      </p>
+    </div>
+
+    <h2>SPIRITS, the unreleased N-Gage MMO dueling game</h2>
+
+    <nav class="toc">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#authors-note">Author's note</a></li>
+        <li><a href="#introduction">Introduction</a></li>
+        <li>
+          <a href="#about-the-game">About the Game</a>
+          <ol>
+            <li><a href="#development">Development</a></li>
+            <li>
+              <a href="#storyline">Storyline</a>
+              <ol>
+                <li><a href="#trailer">Trailer</a></li>
+              </ol>
+            </li>
+            <li><a href="#gameplay">Gameplay</a></li>
+            <li><a href="#the-team">The Team</a></li>
+            <li><a href="#aftermath">Aftermath</a></li>
+            <li><a href="#trivia">Trivia</a></li>
+          </ol>
+        </li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li>
+          <a href="#the-art-of-spirits">The Art of SPIRITS</a>
+          <ol>
+            <li><a href="#screenshots">Screenshots</a></li>
+            <li><a href="#concept-art">Concept Art</a></li>
+            <li><a href="#design-elements">Design Elements</a></li>
+            <li><a href="#demo-game-art">Game Art (Demo)</a></li>
+          </ol>
+        </li>
+        <li><a href="#postface">Postface</a></li>
+      </ol>
+    </nav>
+
+    <img class="image-zoom" src="img/spirits-1200x844.png" alt="SPIRITS cover art">
+
+    <h3 id="authors-note">Author's note</h3>
+
+    <p>
+      An historical reappraisal of the Nokia N-Gage story may seem
+      unusual, or uninteresting to many, but what platform can claim to
+      have so many unreleased games? We know of at least 24. Compare
+      that to a total of just 55 officially released games, there
+      remains yet another 30 percent of titles waiting to be discovered.
+    </p>
+
+    <p>
+      This is the second article in this series and while I'm sure it
+      won't be the last, I hope you enjoy reading this and that I can
+      get you at least a little inspired about the Nokia N-Gage and its
+      history.
+    </p>
+
+    <p>
+      To cut a long story short: On behalf of the
+      entire <a href="#postface">Nokia N-Gage community</a>, I hope you
+      enjoy this striking collection of lost media and the story that
+      goes with it.
+    </p>
+
+    <h3 id="introduction">Introduction</h3>
+
+    <p>
+      The game is pitched as follows:
+    </p>
+
+    <blockquote>
+      <p>
+        We have always sensed their importance. Throughout the history of
+        mankind, the four elements have been linked with mysterious
+        forces. From ancient religous lore to the mythical pursuits of
+        medieval alchemists.<br>
+
+        The true nature of the elemental powers is both wonderful and
+        frightening. Our planet is teeming with mysterious and powerful
+        spirit beings, connected to the four elements: earth, water,
+        wind and fire. They can’t be seen, but [their] influence
+        stretches from the slightest whiff of wind to the most fearsome
+        earthquake.
+      </p>
+
+      <p>
+        In the game SPIRITS, modern technology has closed the gap between
+        our world and the spirit dimension. The immense power of the
+        elements can now be used for good or evil.  Unfortunately, evil is
+        a step ahead…
+      </p>
+      <cite>
+        — <a href="archive/Spirits_StyleGuide_051015-1_ebook.pdf">The
+          internal style guide</a>
+      </cite>
+    </blockquote>
+
+    <h3 id="about-the-game">About the Game</h3>
+
+    <h4 id="development">Development</h4>
+
+    <p>
+      It all started quite businesslike and practical back in 2002 with
+      a concept, whose game and technical design were further refined
+      during the course of 2003, until around December of the same year,
+      when Jadestone started to turn it into a demo for Symbian S60
+      phones, which was never intended for the consumer market. This was
+      developed to showcase a practical use case for the SIP protocol
+      that Nokia was promoting at the time<label for="sn-1"
+      class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-1"
+      class="sidenote-toggle"><span class="sidenote">Source:
+      GlobeNewswire, <a href="https://web.archive.org/web/20211105080932/https://www.globenewswire.com/news-release/2001/02/21/1843953/0/en/Nokia-to-promote-industry-wide-initiative-to-create-a-richer-call-experience.html">archived</a>
+      from the original on February 21, 2001. Retrieved November 5,
+      2021.</span>.
+    </p>
+
+    <p>
+      <q>The idea was that you could challenge a friend for a battle and
+      your friend didn't have to have the game running when you sent the
+      challenge</q>, said Björn Ritzl, who worked together with Per
+      Malmén as a programmer on the project, shortly after he joined
+      Jadestone. For him, as for many others involved, it was the first
+      project he had worked on. <q>The first version of Spirits was
+      based on an idea by Johan Mogren</q>, he continued.
+    </p>
+
+    <div class="centered media-container">
+      <a href="img/spirits-repro-front.jpg">
+        <img class="centered" src="img/spirits-repro-front-tn.jpg" alt="SPIRITS reproduction, front">
+      </a>
+      <p class="caption">
+        The front of an authentic reproduction made
+        by <a href="#postface">Timo Weirich</a> in 2021 based on the
+        original layout.
+      </p>
+    </div>
+
+    <p>
+      After the original demo of the game was delivered in September
+      2004, it was already clear that this idea had more potential to
+      offer, so Jadestone decided to develop a full-fledged game for the
+      consumer market, and to do this for the Nokia N-Gage seemed
+      logical — it was a very promising platform at the time, with
+      existing online infrastructure and games sold in stores, at retail
+      prices. Because of this, Jadestone submitted a proposal as early
+      as October 2004.
+    </p>
+
+    <p>
+      <q>We developed the initial demo game for Nokia and although never
+      intended for regular consumers, we all realized that we had a
+      really fun and engaging (no pun intended) game. I think it was
+      really a nobrainer for us to sell and for Nokia to buy an expanded
+      game, with a more ambitious storyline</q>, states Jonas
+      Haraldson, former Marketing Director at Jadestone.
+    </p>
+
+    <div class="centered media-container">
+      <a href="img/spirits-repro-back.jpg">
+        <img class="centered" src="img/spirits-repro-back-tn.jpg" alt="SPIRITS reproduction, back">
+      </a>
+      <p class="caption">
+        The back of an authentic reproduction made
+        by <a href="#postface">Timo Weirich</a> in 2021 based on the
+        original layout.
+      </p>
+    </div>
+
+    <p>
+      Then, in April 2005, a month before E3, marketing planning for the
+      game's release began. One week before E3, on May 12, 2005, SPIRITS
+      was officially announced and a demo was made available for
+      selected media outlets.<label for="sn-2" class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-2"
+      class="sidenote-toggle"><span class="sidenote">Source:
+      Nokia, <a href="https://web.archive.org/web/20050525035824/http://press.nokia.com/PR/200505/994206_5.html">archived</a>
+      from the original on May 12, 2005. Retrieved May 25,
+      2005. <a href="archive/Spirits_FINAL.pdf">Download press
+      release</a>.</span>
+    </p>
+
+    <p>
+      Steve Palley, the GameSpot journalist who covered the demo
+      afterwards, predicted <q>Spirits is at least eight months away
+      from prime time, but the ideas, graphics, and infrastructure are
+      already in place.</q><label for="sn-3" class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-3"
+      class="sidenote-toggle"><span class="sidenote">Source:
+      GameSpot, <a href="https://web.archive.org/web/20051229031645/http://www.gamespot.com/ngage/strategy/spirits/preview_6126191.html">archived</a>
+      from the original on May 20, 2005. Retrieved December 29,
+      2005.</span> This seems plausible and also allows for conclusions
+      to be drawn about the unexpected end of the project, since Nokia
+      ultimately discontinued the N-Gage in October
+      2006<label for="sn-4" class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-4"
+      class="sidenote-toggle"><span class="sidenote">Source: All About
+      Symbian, <a href="https://web.archive.org/web/20061103223054/http://www.allaboutsymbian.com/news/item/4376_Payload_for_N-Gage__N-Gage_QD_.php">archived</a>
+      from the original on October 5, 2006. Retrieved November 3,
+      2006.</span>. This end however, was already apparent far in
+      advance.
+    </p>
+
+    <h4 id="storyline">Storyline</h4>
+
+    <p>
+      The backstory is as follows:
+    </p>
+
+    <blockquote>
+      <p>
+        The main storyline starts with a young girl who has the unusual
+        power to see the spirits. In the late 1960s she is abducted in
+        order to be used for military research. The goal is to turn
+        elemental energy into powerful weapons.<br>
+
+        Things go wrong, however, and raw elemental energy is unleashed,
+        with disastrous consequences. As a result, the research program
+        is abruptly terminated. The girl is hidden away in a drug
+        induced […] coma.
+      </p>
+    </blockquote>
+
+    <div class="media-container">
+      <video
+        id="trailer"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="img/spirits-trailer-tn.png"
+        data-setup='{"fluid": true}'>
+        <source src="media/spirits-trailer.mp4" type="video/mp4">
+        <source src="media/spirits-trailer.webm" type="video/webm">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider
+          upgrading to a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video
+          </a>
+        </p>
+      </video>
+      <p class="caption">
+        Second game trailer created by Mad Crew.
+        Download: <a href="/media/spirits-trailer.mp4">mp4</a> <a href="/media/spirits-trailer.webm">webm</a>
+      </p>
+    </div>
+
+    <blockquote>
+      <p>
+        Many decades later — in the present time — she is found and
+        captured by the Japanese leader of a mysterious sect. Wanting to
+        decimate Earth's overpopulation, the plan is to use her as a
+        doomsday weapon. An unsuspecting humanity is facing enormous
+        casualties.  The only thing that stands between the sect and
+        global holocaust is an underground network of youths — the Vivid
+        Resistance. Secretly brought together by the old, remorseful
+        leader of the original arms research program, they use specially
+        equipped cellphones to master the art of spirit control.  With
+        the lives of millions of innocent people at stake, the player is
+        called upon to join the Vivids and face the deadly agents.  To
+        stand even a remote chance, they must master the elements.
+      </p>
+      <cite>
+        — <a href="archive/Spirits_StyleGuide_051015-1_ebook.pdf">The
+          internal style guide</a>
+      </cite>
+    </blockquote>
+
+    <p>
+      The official website described the game like this<label for="sn-5"
+      class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-5"
+      class="sidenote-toggle"><span class="sidenote">Source:
+      n-gage.com, <a href="https://web.archive.org/web/20051013074614/http://www.n-gage.com/en-R1/games/gamedata/spirits.htm">archived</a>
+      from the original. Retrieved October 13, 2005.</span>:
+
+    <blockquote>
+      <p>
+        A long time ago, peace ruled the Earth as mankind lived in
+        harmony with nature and all the other inhabitants of the planet
+        - those you could see and those you couldn’t. Spirit beings born
+        out of the four elements were all around us, and some humans
+        could even communicate with them.
+      </p>
+
+      <p>
+        The memory of those ancient times is buried somewhere in the
+        collective consciousness of mankind, but there are still spirit
+        beings here to this day. SPIRITS™ tells the story of people that
+        have been involved with the spirits in different ways over the
+        millenia. The epic saga, which began in the ancient past of
+        humanity, now plays out in the streets of today’s metropolitan
+        cities.
+      </p>
+
+      <p>
+        SPIRITS™ is a massively multiplayer online (MMO) game with one
+        main objective. You must fight the CUT - a doomsday sect trying
+        to stop overpopulation by creating natural disasters to kill
+        innocent people. You’ll have to hunt and collect spirits, test
+        your skills in duels, perform rituals, and take on challenging
+        missions that require tactical thinking and speedy reflexes.
+      </p>
+    </blockquote>
+
+    <p>
+      In addition, Jadestone sums it up on the company's own website as
+      follows<label for="sn-6" class="sidenote-toggle
+      sidenote-number"></label><input type="checkbox" id="sn-6"
+      class="sidenote-toggle"><span class="sidenote">Source:
+      Jadestone, <a href="https://web.archive.org/web/20050310160804/http://www.jadestone.se/spirits.asp">archived</a>
+      from the original. Retrieved March 3, 2005.</span>:
+    </p>
+
+    <blockquote>
+      <p>
+        Spirits is a major online game format currently under
+        development. When launched, it will draw players into an ancient
+        conflict between spirit masters vying for control over powerful
+        elemental spirits. Based on a compelling alternate reality
+        story, the game will take players into a 24-hour multiplayer
+        gaming experience.
+      </p>
+
+      <p>
+        Besides a story resonating with current world issues as well as
+        ancient mythology, the game will offer players many levels of
+        enjoyment. Competitive gameplay and collectible game resources
+        will draw players into an environment built to support extensive
+        community building.<br>
+
+        The game is set to be unique in its full integration of PC and
+        cellphone in both the gameplay and the business model.
+      </p>
+    </blockquote>
+
+    <p>
+      This is the only reference to a PC version. It can be assumed that
+      this idea was discarded since it was explicitly mentioned in the
+      press report that SPIRITS will only be available on the N-Gage
+      platform. It is also possible that the web interface was referred
+      to, which I will touch on later.
+    </p>
+
+    <h4 id="gameplay">Gameplay</h4>
+
+    <p>
+      There are four basic gameplay elements in SPIRITS:
+    </p>
+
+    <ul>
+      <li>Collecting SPIRITS</li>
+      <li>Completing missions</li>
+      <li>Dueling other players</li>
+      <li>Optimizing your team of SPIRITS to keep it in fighting shape</li>
+    </ul>
+
+    <p>
+      The core gameplay in SPIRITS is based on players hunting and
+      collecting spirits. Gamers will test their skills in duels where
+      tactical thinking, as well as quick reactions, will make all the
+      difference. In the race to save mankind, there is only one way to
+      win: mastering the elements.
+    </p>
+
+    <p>
+      To get new SPIRITS, you'll have to participate in a little
+      minigame, called a <i>hunt</i>, where you catch spirits as they
+      float around. However, the essential aspect of the game is the
+      duel mechanics:  you put together 6 SPIRITS that represent your
+      team. Your team and the opponent's team then face each other on an
+      isometric arena. To fight, you choose your own SPIRIT with which
+      you can target one of your opponent's SPIRITS. The two SPIRITS
+      collide and damage points are assigned accordingly. The game is
+      turn-based, but since both players make decisions at the same
+      time, the game mechanics are loosened up a bit.
+    </p>
+
+    <p>
+      Besides the core gameplay, there were other features that are
+      worth mentioning. For example, Oscar Berg, the web and front-end
+      developer involved, talked about a web interface through which the
+      player could perform certain activities: <q>If something it might
+      be worth while to mention that the n-gage game was going to be
+      complemented by a web portal where it was possible to arrange your
+      team and trade spirits with your friends</q>. Technically, this
+      feature worked, although it was probably not production-ready.
+    </p>
+
+    <p>
+      Martin Vilcans, one of the programmers, also mentioned another
+      idea that was discussed at the time: <q>We even had some ideas of
+      letting the device's geolocation affect what type of spirit you
+      got when you <i>hunted</i> them. If you were close to water, it
+      would be more likely that you get a water spirit for
+      example. Comparing the game concept to Pokémon Go is not far off,
+      but Spirits had cooler graphics</q>. Ultimately, however, this was
+      just an idea that would not have been technically feasible and was
+      therefore not investigated further.
+    </p>
+
+    <h4 id="the-team">The Team</h4>
+
+    <p>
+      These are the people I know were involved in the development of
+      SPIRITS. Unfortunately, I can't say for sure that this list is
+      complete and I may add to it at a later date.
+    </p>
+
+    <p>
+      Also, it's proving a bit difficult to figure out who worked on the
+      main game and demo, and who only worked on one of them. The names
+      I know for sure are marked accordingly.
+    </p>
+
+    <ul>
+      <li>Andreas Holmén, Backend Developer</li>
+      <li>Arshak Ardeshir, Quality Assurance</li>
+      <li>Björn Ritzl, Programmer (Demo)</li>
+      <li>Christopher Östlund, Quality Assurance</li>
+      <li>Fredrik Englund, Oblivion Games, 3D Artist</li>
+      <li>Fredrik Hård af Segerstad from, Oblivion Games, 3D Artist</li>
+      <li>Jimmy Lee Öman, Quality Assurance (Unconfirmed)</li>
+      <li>Johan Donwill, Oblivion Games, 3D Artist</li>
+      <li>Johan Mogren, Original Creator of SPIRITS and Game Designer (Both games)</li>
+      <li>Jonas Haraldson, Marketing Director (Demo)</li>
+      <li>Jonas Jepson, Project Manager</li>
+      <li>Klaus Lyngeled, Lead Artist</li>
+      <li>Marie Zide</li>
+      <li>Martin Vilcans, Programmer (Both games)</li>
+      <li>Mikael Emtinger, Story Lead and Writer</li>
+      <li>Nils Gullikson, 2D Artist</li>
+      <li>Oscar Berg, Flash/Web Developer</li>
+      <li>Per Malmén, Programmer (Both games)</li>
+      <li>Tommy Palm, Vice President Mobile</li>
+    </ul>
+
+    <h4 id="aftermath">Aftermath</h4>
+
+    <p>
+      Later, after Nokia pulled out, Jadestone began to develop a PC MMO
+      based on SPIRITS. However, the project was put on ice due to
+      funding problems.
+    </p>
+
+    <p>
+      Rikard Herlitz, a lead developer at Jadestone, published a short
+      video of a tech demo that was developed using
+      the <a href="https://jmonkeyengine.org/">jMonkeyEngine</a>.
+    </p>
+
+    <div class="centered video-container-360p">
+      <video
+        id="pc-tech-demo"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="img/spirits-pc-tech-demo-tn.png"
+        data-setup='{"fluid": true}'>
+        <source src="media/spirits-pc-tech-demo.mp4" type="video/mp4">
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider
+          upgrading to a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank">
+            supports HTML5 video
+          </a>
+        </p>
+      </video>
+      <p class="caption">
+        Source:
+        YouTube, <a href="https://www.youtube.com/watch?v=_CC7eFIzQi4">Spirits
+        Tech demo</a>. Download: <a href="/media/spirits-pc-tech-demo.mp4">mp4</a>
+      </p>
+    </div>
+
+    <p>
+      However, this demo had little to do with the original vision of
+      SPIRITS, but rather resembled a fantasy-oriented MMO comparable to
+      Word of Warcraft. Johan Mogren concurred, adding: <q>From my
+      perspective, it was central that the player was playing as
+      himself, not an avatar</q>.
+    </p>
+
+    <h4 id="trivia">Trivia</h4>
+
+    <ul>
+      <li>
+        During its development, the game was given the preliminary title
+        <i>Spirits — The Vivid Resistance</i>, but the packaging
+        apparently settled on just <i>Spirits</i>.
+      </li>
+      <li>
+        <a href="archive/Spirits_StyleGuide_051015-1_ebook.pdf">The
+        internal style guide</a> mentioned that the game was not to be
+        described in fantasy terms. As they put it, <q>There is no magic
+        involved and no spells are cast</q>.
+      </li>
+      <li>
+        It is said that the <i>spirits</i> are not as in the traditional
+        meaning of the word. The actual definition however, is not made
+        clear.
+      </li>
+    </ul>
+
+    <h3 id="conclusion">Conclusion</h3>
+
+    <p>
+      Everything I could find on SPIRITS impressed me deeply. While the
+      graphics of the preliminary demo were still relatively colorful,
+      it quickly became clear what SPIRITS would evolve into: a
+      distinctive, unique game with a deep mythology that subtly
+      interweaves the reality of SPIRITS with our own. An alternative
+      reality that addresses both current world problems and ancient
+      mythology, reflecting a world that seems to resemble ours, but is
+      dominated by a dark and enigmatic allure.
+    </p>
+
+    <p>
+      I also really like how SPIRITS has incorporated the player's
+      N-Gage into the story, sort of as a tool to master the art of
+      spirit control. I've only seen something similar in Ingress, an
+      augmented reality MMO by Niantic, Inc. where the player's
+      smartphone or tablet is turned into a scanner that is used to
+      fight and capture enemy territory. However, this was in late 2013,
+      almost a decade later. In retrospect, SPIRITS was definitely ahead
+      of its time — a fact that doesn't seem to be an isolated case in
+      the history of the Nokia N-Gage.
+    </p>
+
+    <p>
+      No one can say for sure how and if SPIRITS would have been
+      successful, but with the remaining N-Gage game library in mind and
+      in contrast to Sega's Pocket Kingdom, we probably missed out on
+      one of the best titles, and especially on one of the few that
+      could have fully exploited the platform's potential.
+    </p>
+
+    <blockquote>
+      “This game changed my life as well as many others.”
+      <cite>
+        — Johan Mogren about SPIRITS
+      </cite>
+    </blockquote>
+
+    <blockquote>
+      “[…] When Pokemon Go became a hit I thought alot of what could
+      have been with the Spirits brand since they are quite
+      similar. Sure, more Pokemons to collect but on the other hand the
+      Spirit battle were actually fun”
+      <cite>
+        — Per Malmén
+      </cite>
+    </blockquote>
+
+    <h3 id="the-art-of-spirits">The Art of SPIRITS</h3>
+
+    <p>
+      Of course, this article will not deprive you of the fabulous
+      artwork and visuals of this unique world, and also the mythology
+      that surrounds SPIRITS. I decided to present it separately and
+      divide it into categories. These are organized as follows:
+    </p>
+
+    <nav class="toc">
+      <ol>
+        <li><a href="#screenshots">Screenshots</a></li>
+        <li><a href="#concept-art">Concept Art</a></li>
+        <li><a href="#design-elements">Design Elements</a></li>
+        <li><a href="#demo-game-art">Game Art (Demo)</a></li>
+      </ol>
+    </nav>
+
+    <h4 id="screenshots">Screenshots</h4>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-3x1" src="img/spirits-01.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-3x1" src="img/spirits-02.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-3x1" src="img/spirits-03.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-04.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-05.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-06.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-07.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-08.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-09.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-10.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-11.png" alt="SPIRITS screenshot">
+    </div>
+
+    <div class="free-standing gallery">
+      <img class="image-zoom gallery-3x1" src="img/spirits-12.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-3x1" src="img/spirits-13.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-3x1" src="img/spirits-14.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-15.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-16.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-17.png" alt="SPIRITS screenshot">
+      <img class="image-zoom gallery-4x1" src="img/spirits-18.png" alt="SPIRITS screenshot">
+    </div>
+
+    <h4 class="free-standing" id="concept-art">Concept Art</h4>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-3x1" src="img/spirits-concept-art-1.png" alt="SPIRITS concept art">
+      <img class="image-zoom gallery-3x1" src="img/spirits-concept-art-2.png" alt="SPIRITS concept art">
+      <img class="image-zoom gallery-3x1" src="img/spirits-concept-art-3.png" alt="SPIRITS concept art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-5x1" src="img/spirits-elements-1.png" alt="SPIRITS concept art">
+      <img class="image-zoom gallery-5x1" src="img/spirits-elements-2.png" alt="SPIRITS concept art">
+      <img class="image-zoom gallery-5x1" src="img/spirits-elements-3.png" alt="SPIRITS concept art">
+      <img class="image-zoom gallery-5x1" src="img/spirits-elements-4.png" alt="SPIRITS concept art">
+      <img class="image-zoom gallery-5x1" src="img/spirits-elements-5.png" alt="SPIRITS concept art">
+    </div>
+
+    <h4 class="free-standing" id="design-elements">Design Elements</h4>
+
+    <div class="gallery">
+      <img class="image-zoom gallery-3x1" src="img/spirits-banner.png" alt="SPIRITS banner">
+      <img class="image-zoom gallery-3x1" src="img/spirits-banner-fire.png" alt="SPIRITS banner">
+      <img class="image-zoom gallery-3x1" src="img/spirits-banner-earth.png" alt="SPIRITS banner">
+      <img class="image-zoom gallery-3x1" src="img/spirits-banner-wind.png" alt="SPIRITS banner">
+      <img class="image-zoom gallery-3x1" src="img/spirits-banner-water.png" alt="SPIRITS banner">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-4x1" src="img/spirits-page-layout-fire.png" alt="SPIRITS page layout">
+      <img class="image-zoom gallery-4x1" src="img/spirits-page-layout-earth.png" alt="SPIRITS page layout">
+      <img class="image-zoom gallery-4x1" src="img/spirits-page-layout-wind.png" alt="SPIRITS page layout">
+      <img class="image-zoom gallery-4x1" src="img/spirits-page-layout-water.png" alt="SPIRITS page layout">
+    </div>
+
+    <h4 class="free-standing" id="demo-game-art">Game Art (Demo)</h4>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-fire.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-00.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-01.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-02.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-03.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-04.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-05.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-06.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-07.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-08.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-09.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-10.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-earth.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-11.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-12.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-13.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-14.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-15.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-16.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-17.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-18.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-19.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-20.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-21.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-wind.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-22.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-23.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-24.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-25.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-26.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-27.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-28.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-29.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-30.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-31.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-32.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-water.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-33.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-34.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-35.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-36.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-37.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-38.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-39.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-40.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-41.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-42.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-6x1" src="img/spirits-full-43.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-00.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-01.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-02.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-03.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-04.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-05.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-06.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-07.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-08.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-09.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-10.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-11.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-12.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-13.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-14.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-15.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-16.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-17.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-18.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-19.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-20.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-21.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-22.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-23.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-24.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-25.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-26.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-27.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-28.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-29.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-30.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-31.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-32.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-33.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-34.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-35.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-36.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-37.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-38.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-39.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-40.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-41.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-42.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-12x1" src="img/spirits-corner-43.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-00.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-01.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-02.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-03.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-04.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-05.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-06.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-07.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-08.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-09.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-10.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-11.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-12.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-13.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-14.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-15.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-16.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-17.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-18.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-19.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-20.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-21.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-22.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-23.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-24.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-25.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-26.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-27.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-28.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-29.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-30.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-31.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-32.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-33.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-34.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-35.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-36.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-37.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-38.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-39.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-40.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-41.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-42.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-common" src="img/spirits-icon-43.jpg" alt="Protoype game art">
+    </div>
+
+    <div class="gallery free-standing">
+      <img class="image-zoom gallery-4x1" src="img/spirits-arena-bg.jpg" alt="Protoype game art">
+      <img class="image-zoom gallery-4x1" src="img/spirits-hunt.jpg" alt="Protoype game art">
+    </div>
+
+    <h3 class="free-standing" id="postface">Postface</h3>
+
+    <p>
+      I hope you enjoyed this article.  If not, let me know – I welcome
+      constructive feedback to improve the quality of my content.  If
+      you are interested in the Nokia N-Gage in general, you are
+      cordially invited to visit our small online community.  You can
+      find us
+      on <a href="https://discord.gg/dbUzqJ26vs">Discord</a>, <a href="https://t.me/nokia_ngage">Telegram</a>
+      and in #ngage on <a href="http://www.efnet.org">EFnet</a>.
+    </p>
+
+    <p>
+      At this point I would like to thank my
+      friends <a href="https://twitter.com/bewarerazvan">Razvan</a>
+      and <a href="https://danwhelan.ie">Dan Whelan</a>, without whom
+      this article would never have been possible.
+    </p>
+
+    <p>
+      I would also like to thank Timo Weirich, owner and curator of the
+      virtual online
+      museum <a href="http://retro-net.de/">retro-net.de</a> for his
+      continous support and insights, and glmdgrielson from
+      the <a href="https://hitsave.org/">Hit Save!</a>-Discord for
+      taking the time to revise this article in his fantastically
+      nitpicky way.
+    </p>
+
+    <p>
+      Furthermore, I would, of course, like to thank all the people
+      involved who so willingly invested time in giving me the
+      information I was looking for. Without people like you, it would
+      not be possible to preserve and pass on video game history.
+    <p>
+
+    <p>
+      <a href="/">Go back</a>
+    </p>
+  </body>
+</html>
