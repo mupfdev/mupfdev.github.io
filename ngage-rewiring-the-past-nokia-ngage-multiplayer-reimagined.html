@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Rewiring the past: Nokia N-Gage multiplayer reimagined">
+    <meta property="og:type" content="article">
+    <meta property="og:url"
+      content="https://mupfdev.github.io/ngage-rewiring-the-past-nokia-ngage-multiplayer-reimagined.html">
+    <meta property="og:image" content="https://mupfdev.github.io/img/ng-1200x1200.png">
+
+    <title>mupf.dev</title>
+    <link rel="stylesheet" href="/style.min.css">
+    <link rel="stylesheet" href="/mupf.css">
+    <link rel="stylesheet" href="/minimal-lightbox.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=2">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-3x32.png?v=2">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+    <link rel="manifest" href="/site.webmanifest?v=2">
+
+    <script src="/minimal-lightbox.min.js"></script>
+  </head>
+
+  <body>
+      <h1>mupf.dev</h1>
+
+      <p class="author">Michael Fitzmayer <br> November 8th, 2026</p>
+
+      <div class="abstract">
+          <p>
+          </p>
+
+      </div>
+
+      <h2>Rewiring the past: Nokia N-Gage multiplayer reimagined</h2>
+
+      <p>
+          Some projects are too interesting to leave unfinished.
+      </p>
+
+      <p>
+          Back in 2023, I started working on something I always thought
+          would be a pretty cool idea:
+      </p>
+
+      <p>
+          <b>Bring online multiplayer back to the Nokia N-Gage.</b>
+      </p>
+
+      <p>
+          Remember the N-Gage? Nokia's gaming phone from the early 2000s.
+          Some of its games supported multiplayer, but only locally over
+          Bluetooth.
+      </p>
+
+      <p>
+          The idea was simple: What if we could make those games think
+          they're still playing over Bluetooth, while actually connecting
+          players over the Internet?
+      </p>
+
+      <p>
+          I got started, but eventually hit a wall. The original GameComms
+          SDK was poorly documented, and reverse-engineering its behavior
+          turned out to be a much bigger challenge than expected.
+      </p>
+
+      <p>
+          So the project went dormant.
+      </p>
+
+      <p>
+          Fast forward to 2026. I handed the repository over to Claude
+          with one goal: <b>Make it work.</b>
+      </p>
+
+      <p>
+          And that's how <b>PhantomLink</b> came back to life.
+      </p>
+
+      <p>
+          The interesting part isn't just getting AI to write code. It's
+          tackling a pretty unusual engineering problem.
+      </p>
+
+      <p>
+          Here's how it works:
+      </p>
+
+      <ol>
+          <li>
+              <b>Replacement DLL:</b> PhantomLink replaces the original
+              GAMECOMMS.DLL that N-Gage games use for multiplayer. The goal
+              is to keep the original games completely unmodified.
+          </li>
+          <li>
+              <b>Bluetooth bridge:</b> The N-Gage still communicates over its
+              native Bluetooth interface. An ESP32 or a PC (including a
+              Raspberry Pi) acts as a bridge.
+          </li>
+          <li>
+              <b>Internet transport:</b> The bridge forwards the GameComms
+              traffic over TCP to a central server.
+          </li>
+          <li>
+              <b>Matchmaking &amp; routing:</b> The server groups players by game
+              and API version, manages sessions and player slots, and
+              forwards multiplayer data between devices.
+          </li>
+      </ol>
+
+      <p>
+          The really nice thing is the separation of responsibilities: the
+          replacement DLL preserves the original GameComms behavior, the
+          bridge handles transport, and the server handles sessions and
+          routing. The server doesn't need to understand the game itself.
+      </p>
+
+      <p>
+          And then there's the compatibility challenge.
+      </p>
+
+      <p>
+          The original N-Gage SDK had multiple GameComms API variants.
+          PhantomLink now provides 11 DLL variants, dealing with the
+          original Symbian ABI, exported functions, callback behavior and
+          binary compatibility.
+      </p>
+
+      <p>
+          The implementation is split into portable C engines,
+          platform-specific adapters, a shared protocol library and
+          automated tests. Even the core state machines are designed to
+          run without threads or blocking calls, making them testable
+          without the original hardware.
+      </p>
+
+      <p>
+          It's a great example of taking an old, proprietary ecosystem and
+          building a modern infrastructure around it without changing the
+          software that runs on it.
+      </p>
+
+      <p>
+          There's still real-hardware validation to do, but the protocol,
+          server, bridge and DLL logic are implemented, with automated
+          test coverage.
+      </p>
+
+      <p>
+          And honestly, there's something quite satisfying about the idea
+          that two people can now potentially play an early-2000s N-Gage
+          multiplayer game from opposite sides of the world.
+      </p>
+
+      <p>
+          A dormant project, a rather unusual engineering challenge, and a
+          little help from Claude.
+      </p>
+
+      <p>
+          <b>The N-Gage deserves another life.</b>
+      </p>
+
+      <p>
+          Project:
+          <a href="https://github.com/ngagesdk/PhantomLink">
+              https://github.com/<wbr>ngagesdk/<wbr>PhantomLink
+          </a>
+      </p>
+
+      <p>
+          <a href="/">Go back</a>
+      </p>
+  </body>
+</html>
